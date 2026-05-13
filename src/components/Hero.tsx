@@ -41,7 +41,7 @@ export default function Hero() {
           className="text-xl md:text-2xl mb-8 animate-fade-in-up"
           style={{ animationDelay: '0.4s' }}
         >
-          Your home away from home in the heart of Masai Mara
+          Your home away from home in the heart of Maasai Mara
         </p>
         <button
           onClick={scrollToNext}
