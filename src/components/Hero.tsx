@@ -24,7 +24,7 @@ export default function Hero() {
   className="absolute inset-0 z-0"
   style={{
     transform: `translateY(${offsetY * 0.5}px)`,
-    backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(/herobg.png)`,
+    backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(/hero.png)`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
   }}
