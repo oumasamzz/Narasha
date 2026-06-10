@@ -38,7 +38,7 @@ export default function About() {
           >
             <div className="relative h-96 md:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="/hosts.JPG"
                 alt="Narasha Homestay"
                 className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
               />
@@ -57,8 +57,8 @@ export default function About() {
             </h2>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
               Narasha Homestay owner and manager, Dolorence Senaipei, is a local
-              born and bred Maasai who speaks German, English, Swahili, and
-              Maasai fluently.
+              born and bred Maasai who speaks a bit of German, English, Swahili, and
+              Maasai.
             </p>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
               She and the team are dedicated and passionate about providing

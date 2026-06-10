@@ -111,8 +111,8 @@ export default function Contact() {
               <div className="mt-12 p-6 bg-white/10 rounded-xl backdrop-blur-sm">
                 <p className="font-semibold mb-2">Operating Hours</p>
                 <p className="text-amber-100">24/7 Reception</p>
-                <p className="text-amber-100">Check-in: 2:00 PM</p>
-                <p className="text-amber-100">Check-out: 11:00 AM</p>
+                <p className="text-amber-100">Check-in: 11:00 AM</p>
+                <p className="text-amber-100">Check-out: 10:00 AM</p>
               </div>
             </div>
           </div>

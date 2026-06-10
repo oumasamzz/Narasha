@@ -37,7 +37,7 @@ export default function Services() {
       description:
         'Savor authentic Maasai dishes and local Kenyan cuisine prepared with fresh ingredients.',
       image:
-        'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800',
+        '/cuisine2.png',
     },
     {
       icon: MapPin,
@@ -45,7 +45,7 @@ export default function Services() {
       description:
         'Immerse yourself in Maasai culture with guided tours of local villages and communities.',
       image:
-        'https://images.pexels.com/photos/2295744/pexels-photo-2295744.jpeg?auto=compress&cs=tinysrgb&w=800',
+        '/culturaltour.png',
     },
   ];
 

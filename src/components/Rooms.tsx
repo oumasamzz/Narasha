@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Wifi, Coffee, Wind, Users, CheckCircle } from 'lucide-react';
+import { Wifi, Coffee, Wind, Users, CheckCircle, Utensils, MapPin, Heart } from 'lucide-react';
 
 export default function Rooms() {
   const [isVisible, setIsVisible] = useState(false);
@@ -24,26 +24,23 @@ export default function Rooms() {
 
   const rooms = [
     {
-      name: 'Standard Room',
-      price: '$45',
+      name: 'Bandas',
+      price: '$410',
       period: 'per night',
-      image:
-        'https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800',
-      capacity: '2 Guests',
+      image: '/bandas1.png',
+      capacity: '4 Guests',
       features: [
-        'Comfortable double bed',
+        'Comfortable double & single beds',
         'Private bathroom',
-        'Free Wi-Fi',
-        'Morning coffee/tea',
+        'Fan and mosquito net',
       ],
     },
     {
       name: 'Deluxe Room',
-      price: '$65',
+      price: '$300',
       period: 'per night',
-      image:
-        'https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800',
-      capacity: '2-3 Guests',
+      image: '/room1.JPG',
+      capacity: '2 Guests',
       features: [
         'Queen-size bed',
         'En-suite bathroom',
@@ -55,17 +52,15 @@ export default function Rooms() {
     },
     {
       name: 'Family Suite',
-      price: '$95',
+      price: '$400',
       period: 'per night',
-      image:
-        'https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/room4.JPG',
       capacity: '4-5 Guests',
       features: [
-        'Two bedrooms',
+        'Spacious layout',
         'Living area',
         'Two bathrooms',
         'Full breakfast included',
-        'Balcony with panoramic views',
       ],
     },
   ];
@@ -77,7 +72,8 @@ export default function Rooms() {
       className="py-24 bg-gradient-to-b from-amber-50 to-white"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        {/* Header Section */}
+        <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Our Accommodation
           </h2>
@@ -86,6 +82,56 @@ export default function Rooms() {
           </p>
         </div>
 
+        {/* Integrated Homestay Description */}
+        <div className="bg-white rounded-2xl p-8 shadow-sm border border-amber-100 mb-16">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="space-y-2">
+              <div className="flex items-center gap-2 text-amber-700 font-bold text-lg">
+                <Users size={20} />
+                <h3>Comfortable Accommodations</h3>
+              </div>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                Narasha Homestay in Talek offers family rooms with private bathrooms, terraces, and free WiFi. Each room includes a dining area, wardrobe, and modern amenities.
+              </p>
+            </div>
+
+            <div className="space-y-2">
+              <div className="flex items-center gap-2 text-amber-700 font-bold text-lg">
+                <Utensils size={20} />
+                <h3>Dining Experience</h3>
+              </div>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                The family-friendly restaurant serves African, Indian, and American cuisines with vegan and dairy-free options. Guests can enjoy brunch and dinner in a modern and romantic ambiance.
+              </p>
+            </div>
+
+            <div className="space-y-2">
+              <div className="flex items-center gap-2 text-amber-700 font-bold text-lg">
+                <Coffee size={20} />
+                <h3>Leisure Facilities</h3>
+              </div>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                The property features a sun terrace, garden, outdoor fireplace, and outdoor seating area. Additional amenities include a lounge, shared kitchen, and free on-site parking.
+              </p>
+            </div>
+
+            <div className="space-y-2">
+              <div className="flex items-center gap-2 text-amber-700 font-bold text-lg">
+                <MapPin size={20} />
+                <h3>Convenient Location</h3>
+              </div>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                Located 11 mi from Ol Kiombo Airport, Narasha Homestay provides easy access to Maasai Mara National Park. Guests appreciate the property staff and service support.
+              </p>
+              <div className="pt-2 flex items-center gap-1.5 text-xs font-semibold text-rose-600 bg-rose-50 px-2 py-1 rounded w-fit">
+                <Heart size={14} className="fill-current" />
+                <span>Couples rated it 8.7 for a two-person trip</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Room Grid Card Section */}
         <div className="grid md:grid-cols-3 gap-8">
           {rooms.map((room, index) => (
             <div
@@ -145,6 +191,7 @@ export default function Rooms() {
           ))}
         </div>
 
+        {/* Quick Features Highlight Banner */}
         <div className="mt-12 bg-gradient-to-r from-amber-600 to-amber-700 rounded-2xl p-8 text-white">
           <div className="grid md:grid-cols-4 gap-6 text-center">
             <div>
